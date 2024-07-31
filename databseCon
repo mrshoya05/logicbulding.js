@@ -1,0 +1,13 @@
+//  connect to database  !
+
+import {mongoose} from 'mongoose';
+export const dbConnection = ()=>{
+const dbname = "backend01"
+const uri = "uri"
+mongoose.connect( uri, {dbname})
+.then(()=>{
+console.log("database coonnected !")});
+.catch(err=>{
+console.log("error founded. . ");
+});
+};
