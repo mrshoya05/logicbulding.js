@@ -1,0 +1,16 @@
+// craft schema  in mongo db 
+
+import momgoose from "mongoose"
+export const employeeSchema = mongoose.Schema(
+}
+name: {
+type: "String",
+required: true
+},
+email : {
+type "String",
+required: true 
+}
+)}
+
+export const employee = mongoose.model("Employee", employeeSchema);
