@@ -1,0 +1,5 @@
+onst filterData = list.filter(
+    (data) => data.category === "Free"
+)
+
+// get data from json apis 
