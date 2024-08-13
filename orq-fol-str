@@ -1,0 +1,5 @@
+Database (connect  to database )
+  Modal (create schemas using mongoose)
+    Controller ( to define api logic )
+       Route ( craft route )
+         call routes and databse in (index.js) 
