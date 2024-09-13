@@ -1,0 +1,152 @@
+
+function mono(str){
+    const revValue = str.split("").reverse().join("")
+    console.log(revValue);
+    
+}
+
+
+mono("shoyab")
+
+
+//second method 
+
+function logo(str){
+    let rev = "";
+    for(let i = str.length -1;i>=0; i-- ){
+        rev += str[i]
+    }
+    console.log(rev);
+    
+}
+
+
+logo("windows")
+
+// print 1-10 
+
+for(let i = 1; i < 11; i++){
+    console.log(i);
+    
+}
+
+// get even values 
+
+let myarr=  [ 2,3,4,5,6,7,89,];
+let emptyArr = [];
+   for(let i =0; i <= myarr.length; i++){
+    if(myarr[i] % 2 == 0)
+        emptyArr.push(myarr[i]);
+   }
+console.log(
+    `the even values are : ${emptyArr} `
+);
+
+
+//useing for off
+
+let myarr1 = [2,3,4,5,67,8,44,5]
+const updated = [];
+
+for(num of myarr){
+    if(num %2 ==0)
+        updated.push(num)
+}
+console.log(updated);
+
+//using filter 
+
+let myarr2 = [2,3,4,5,67,8,44,5]
+let evenNumber = myarr.filter(function(element){
+    return element %2 == 0;
+})
+console.log(evenNumber);
+
+
+//palanedrom number 
+function isPlanedrome(str){
+    const claeanStr = str.replace(/\W|_/g, '').toLowerCase();
+
+    const firstWord = claeanStr.split('').reverse().join('');
+   return claeanStr === firstWord
+
+ 
+}
+
+console.log(isPlanedrome("oro"));
+
+
+//second method 
+
+function nopo (str){
+    let rev = str.split("").reverse().join('');
+   if(rev === str){
+    return true;
+   }return false;
+}
+
+
+
+console.log(nopo("racar"));
+
+//third value 
+
+myArr = [2,2,2];
+
+let newValues = myArr.map(hehe);
+function hehe(num){
+    return num ** 2;
+}
+
+console.log(hehe(9));
+
+
+// count string values 
+function myFunction(string){
+    return string.map(str => str.length
+    )
+}
+const string = ["afreen", "khan"]
+const length = myFunction(string)
+console.log(length);
+
+
+//count vawels 
+let value = "shoya"
+
+function myFunction(str){
+   const vowels = 'aeiouAEIOU'
+
+   let count = 0;
+
+   for(const char of str){
+    if(vowels.includes(char)){
+        count ++;
+    }
+   }
+   return count;
+}
+
+console.log(myFunction("shoyab"));
+
+
+//sum of array 
+
+const sum = [ 2,2,2,2];
+let values = sum.reduce(add,0);
+
+function add(a,f){
+return a + f;
+}
+
+console.log(value);
+
+//  specidic value 
+function containsValue(arr, value) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === value) {
+        return true;
+      }
+    }
+    return false;
+  }
